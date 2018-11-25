@@ -5,4 +5,4 @@ RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
 # CMD ["start-notebook.sh", "--NotebookApp.token=''"]
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
